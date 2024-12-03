@@ -1,0 +1,75 @@
+/* General styling */
+
+html,
+main {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 200px;
+    min-height: 100%;
+    position: relative;
+    background-color: #fff;
+    /* Màu nền tổng thể */
+    color: #003366;
+}
+
+
+/* Game Container */
+
+.game-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+/* Game Item */
+
+.game-item {
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.game-icon {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.game-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+/* Rating System */
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.rating .star {
+    font-size: 1.2rem;
+    color: #dcdcdc;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+.rating .star.filled {
+    color: #ffcc00;
+}

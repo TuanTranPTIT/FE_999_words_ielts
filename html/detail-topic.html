@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic Details</title>
+    <link rel="stylesheet" href="/css/detail-topic.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header-component></header-component>
+
+    <!-- Header 2 -->
+    <div class="header2">
+        <a href="detail-topic.html" class="header2-link active">Luyện tập</a>
+        <a href="game.html" class="header2-link">Game</a>
+    </div>
+
+    <!-- Topic Words List -->
+    <main class="word-main">
+        <section class="word-section">
+            <h1 id="sectionTitle" class="section-title">Words in Topic</h1>
+            <div id="wordList" class="word-list">
+                <!-- Words will be dynamically rendered here -->
+            </div>
+        </section>
+    </main>
+
+    <footer-component></footer-component>
+
+    <script src="/js/detail-topic.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/header2.js"></script>
+    <script src="/js/footer.js"></script>
+
+</body>
+
+</html>

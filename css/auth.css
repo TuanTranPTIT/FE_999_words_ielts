@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #777D71, #BBD38B, #F7F6E7, #DFDDC5);
+    color: #777D71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.8);
+    /* Sáng hơn để dễ đọc */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin: 30px auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-container h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #777D71;
+    /* Màu chữ cho tiêu đề */
+}
+
+.form-container input {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 8px;
+    background: #eaefdf;
+    /* Màu nền input */
+    color: #777D71;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-container input::placeholder {
+    color: #777D71;
+    /* Màu placeholder */
+    font-size: 14px;
+}
+
+.form-container button {
+    margin-top: 30px;
+    width: calc(100% - 20px);
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #777D71;
+    /* Màu nền nút */
+    color: #F7F6E7;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-container button:hover {
+    background: #BBD38B;
+    /* Màu khi hover */
+}
+
+.switch-form {
+    margin-top: 15px;
+    font-size: 1em;
+    padding: 10px 0;
+    color: #777D71;
+}
+
+.switch-form a {
+    color: #777D71;
+    /* Màu liên kết */
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.switch-form a:hover {
+    color: #BBD38B;
+    /* Màu liên kết khi hover */
+}
+
+
+/* Style cho biểu tượng mắt */
+
+.password-container {
+    position: relative;
+}
+
+.password-container i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777D71;
+}
+
+i {
+    margin-right: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.7em;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+    /* Đảm bảo hiển thị lỗi dưới input */
+}

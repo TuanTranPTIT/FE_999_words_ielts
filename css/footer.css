@@ -1,0 +1,25 @@
+/* Footer.css */
+
+.footer {
+    padding: 20px 0 20px 0;
+    background-color: #003366;
+    text-align: center;
+    color: #FFF;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.logo-footer {
+    width: 100px;
+    height: auto;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.footer span {
+    font-size: 14px;
+}

@@ -1,0 +1,157 @@
+/* General Styling */
+
+html,
+main {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 200px;
+    min-height: 100%;
+    position: relative;
+    background-color: #fff;
+    /* Màu nền tổng thể */
+    color: #003366;
+}
+
+
+/* Word Details */
+
+.word-details {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.word-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.word-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.word-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.word-name {
+    font-size: 2rem;
+    color: #004488;
+}
+
+.word-pronunciation {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    color: #007799;
+}
+
+.word-type {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #008899;
+}
+
+.word-meaning {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #001144;
+}
+
+.examples-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #dbedff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.examples-container h2 {
+    color: #004488;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.example-item {
+    margin-bottom: 15px;
+}
+
+.example-item p {
+    font-size: 20px;
+    color: #004488;
+}
+
+audio {
+    margin-top: 5px;
+    display: block;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .word-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .word-image {
+        width: 100px;
+        height: 100px;
+    }
+    .word-name {
+        font-size: 1.5rem;
+    }
+    .word-pronunciation {
+        font-size: 1rem;
+    }
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-prev,
+.btn-next {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-prev:disabled,
+.btn-next:disabled {
+    background-color: #777D71;
+    cursor: not-allowed;
+}
+
+.btn-prev:hover:not(:disabled),
+.btn-next:hover:not(:disabled) {
+    background-color: #ebf5ff;
+    color: #000;
+}

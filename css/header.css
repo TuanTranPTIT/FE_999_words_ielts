@@ -1,0 +1,130 @@
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #003366;
+    /* Màu nền header */
+    color: #fff;
+    border-bottom: 1px solid #39526c;
+}
+
+.header .logo img {
+    height: 50px;
+    cursor: pointer;
+}
+
+.header .navigation {
+    font-size: 30px;
+    display: flex;
+    gap: 2rem;
+}
+
+.header .nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    /* Kích thước chữ */
+    font-weight: bold;
+    /* Đậm chữ */
+    transition: color 0.3s, border-bottom 0.3s, transform 0.3s;
+    /* Hiệu ứng chuyển đổi khi hover */
+}
+
+.header .nav-link:hover {
+    color: #8bafd3;
+    /* Màu chữ khi hover */
+    border-bottom: 3px solid #8bafd3;
+    /* Gạch chân khi hover */
+    transform: scale(1.1);
+    /* Tăng kích thước của link khi hover */
+}
+
+.header .nav-link.active {
+    border-bottom: 2px solid #8bafd3;
+    /* Màu nhấn */
+}
+
+.header .user-menu {
+    position: relative;
+}
+
+.header .user-icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.header .dropdown-menu {
+    display: none;
+    width: 550%;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #FFF;
+    /* Màu nền menu dropdown */
+    color: #003366;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.header .dropdown-menu a {
+    text-decoration: none;
+    color: #003366;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.header .dropdown-menu a:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Header 2 */
+
+.header2 {
+    display: flex;
+    justify-content: center;
+    /* Căn giữa các link */
+    gap: 2rem;
+    /* Khoảng cách giữa các link */
+    background-color: #002244;
+    padding: 1rem 0;
+    /* Padding cho phần trên và dưới */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Đổ bóng cho header */
+}
+
+.header2-link {
+    text-decoration: none;
+    /* Loại bỏ gạch chân */
+    color: #fff;
+    /* Màu chữ */
+    font-size: 1.1rem;
+    /* Kích thước chữ */
+    font-weight: bold;
+    /* Đậm chữ */
+    transition: color 0.3s, border-bottom 0.3s, transform 0.3s;
+    /* Hiệu ứng chuyển đổi khi hover */
+}
+
+.header2-link:hover {
+    color: #8bafd3;
+    /* Màu chữ khi hover */
+    border-bottom: 2px solid #8bafd3;
+    /* Gạch chân khi hover */
+    transform: scale(1.1);
+    /* Tăng kích thước của link khi hover */
+}
+
+.header2-link.active {
+    /* Màu chữ cho link đang được chọn sáng hơn */
+    border-bottom: 2px solid #8bafd3;
+    /* Gạch chân cho link đang chọn */
+    font-size: 1.1rem;
+    /* Tăng kích thước chữ cho link active */
+    font-weight: bold;
+    /* Đậm chữ cho link active */
+}

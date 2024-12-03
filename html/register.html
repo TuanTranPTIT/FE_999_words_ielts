@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="/css/auth.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Đăng Ký</h2>
+            <form id="registerForm">
+                <input type="email" id="email" placeholder="Email" required>
+                <span class="error-message" id="emailError"></span>
+
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Mật khẩu" required>
+                    <i class="fas fa-eye" id="togglePassword"></i>
+                    <!-- Biểu tượng mắt -->
+                </div>
+                <span class="error-message" id="passwordError"></span>
+
+                <div class="password-container">
+                    <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu" required>
+                    <i class="fas fa-eye" id="toggleConfirmPassword"></i>
+                    <!-- Biểu tượng mắt -->
+                </div>
+                <span class="error-message" id="confirmPasswordError"></span>
+
+                <button type="submit">Đăng Ký</button>
+            </form>
+            <p class="switch-form"><a href="login.html">Đã có tài khoản? Đăng nhập ngay</a></p>
+        </div>
+    </div>
+    <script src="/js/register.js"></script>
+</body>
+
+</html>
